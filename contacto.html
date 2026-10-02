@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DEV | Contacto</title>
+
+  <link rel="stylesheet" href="contacto.css">
+</head>
+
+<body>
+
+  <!-- ENCABEZADO -->
+  <header class="encabezado">
+    <div class="contenedor barra">
+
+      <a href="index.html" class="marca">
+        <img src="img/LOGO.jpg" alt="Logo de DEV" class="logo">
+        <span class="nombre-marca">✈ DEV</span>
+        <span class="lema">Tu próximo destino te espera</span>
+      </a>
+
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#destinos">Destinos</a></li>
+          <li><a href="index.html#paquetes">Paquetes</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="contacto.html" class="boton">
+        Reserva ahora
+      </a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- PRESENTACIÓN -->
+    <section class="banner-contacto">
+      <div class="contenedor">
+
+        <p class="subtitulo-contacto">
+          TU PRÓXIMA AVENTURA COMIENZA AQUÍ
+        </p>
+
+        <h1>Planeemos tu próximo viaje</h1>
+
+        <p>
+          Cuéntanos qué destino sueñas conocer.<br>
+          Queremos ayudarte a hacerlo realidad.
+        </p>
+
+      </div>
+    </section>
+
+    <!-- FORMULARIO Y PANEL LATERAL -->
+    <div class="contenedor distribucion-contacto">
+
+      <section class="panel-formulario">
+
+        <h2>Escríbenos</h2>
+
+        <p class="texto-secundario">
+          Completa todos los campos para contarnos sobre tu viaje.
+        </p>
+
+        <!-- Formulario de demostración sin servidor -->
+        <form action="contacto.html" method="get">
+
+          <div class="campo">
+            <label for="nombre">Nombre completo</label>
+
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Escribe tu nombre completo"
+              required>
+          </div>
+
+          <div class="campo">
+            <label for="correo">Correo electrónico</label>
+
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              placeholder="nombre@correo.com"
+              required>
+          </div>
+
+          <div class="campo">
+            <label for="destino">Destino de interés</label>
+
+            <select id="destino" name="destino" required>
+              <option value="">Selecciona un destino</option>
+              <option value="san-andres">San Andrés</option>
+              <option value="medellin">Medellín</option>
+              <option value="cartagena">Cartagena</option>
+              <option value="machu-picchu">Machu Picchu</option>
+              <option value="eje-cafetero">Eje Cafetero</option>
+              <option value="santa-marta">Santa Marta</option>
+              <option value="otro">Otro destino</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensaje">Cuéntanos sobre tu viaje</label>
+
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="6"
+              placeholder="Indica las fechas, el número de viajeros y lo que te gustaría hacer."
+              required></textarea>
+          </div>
+
+          <button type="submit" class="boton">
+            Enviar solicitud
+          </button>
+
+          <p class="nota">
+            Formulario de práctica: no envía solicitudes a la agencia.
+            Utiliza datos de ejemplo.
+          </p>
+
+        </form>
+
+      </section>
+
+      <!-- INFORMACIÓN COMPLEMENTARIA -->
+      <aside class="informacion-contacto">
+
+        <h2>Estamos para orientarte</h2>
+
+        <p class="texto-secundario">
+          Descubre nuevas experiencias con ViajaYa.
+        </p>
+
+        <article class="dato-contacto">
+          <h3>Ubicación</h3>
+          <p>Popayán, Cauca · Colombia</p>
+        </article>
+
+        <article class="dato-contacto">
+          <h3>Horario de atención</h3>
+          <p>Lunes a viernes</p>
+          <p>8:00 a. m. a 5:00 p. m.</p>
+        </article>
+
+        <article class="dato-contacto">
+          <h3>¿En qué podemos ayudarte?</h3>
+
+          <ul class="lista-consultas">
+            <li>Destinos nacionales e internacionales.</li>
+            <li>Opciones de alojamiento.</li>
+            <li>Planes para familias y grupos.</li>
+            <li>Tours y experiencias.</li>
+          </ul>
+        </article>
+
+        <div class="invitacion">
+          <span class="avion" aria-hidden="true">✈</span>
+
+          <h3>Tu próximo destino te espera</h3>
+
+          <p>
+            Explora nuestras opciones y encuentra inspiración
+            para tu viaje.
+          </p>
+
+          <a href="index.html#destinos" class="boton boton-claro">
+            Conocer destinos
+          </a>
+        </div>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- PIE DE PÁGINA -->
+  <footer class="pie">
+
+    <div class="contenedor contenido-pie">
+
+      <div>
+        <a href="index.html" class="marca">
+          <span class="nombre-marca">✈ DEV</span>
+          <span class="lema">Tu próximo destino te espera</span>
+        </a>
+      </div>
+
+      <div>
+        <h3>Enlaces rápidos</h3>
+
+        <ul class="enlaces-pie">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Visítanos</h3>
+        <p>Popayán, Cauca · Colombia</p>
+        <p>Lunes a viernes: 8:00 a. m. a 5:00 p. m.</p>
+
+        <a href="contacto.html">
+          Planea tu viaje con nosotros
+        </a>
+      </div>
+
+    </div>
+
+    <div class="contenedor derechos">
+      <p>© 2026 DEV · Agencia de viajes.</p>
+    </div>
+
+  </footer>
+
+</body>
+</html>
