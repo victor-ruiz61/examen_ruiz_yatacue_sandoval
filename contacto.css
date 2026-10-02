@@ -1,0 +1,413 @@
+/* estilos generales */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f8fbff;
+  color: #123047;
+  line-height: 1.6;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+}
+
+h1,
+h2,
+h3 {
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+}
+
+h3 {
+  font-size: 1.1rem;
+}
+
+a {
+  color: #0759b5;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.contenedor {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.texto-secundario {
+  color: #566b7d;
+}
+
+.nota {
+  margin-top: 18px;
+  font-size: 0.85rem;
+  color: #566b7d;
+}
+
+/* encabezado y marca */
+
+.encabezado {
+  background-color: #ffffff;
+  border-bottom: 1px solid #dce7f0;
+}
+
+.barra {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding-top: 18px;
+  padding-bottom: 18px;
+}
+
+.marca {
+  display: flex;
+  flex-direction: column;
+  color: #062c45;
+}
+
+.marca:hover {
+  text-decoration: none;
+}
+
+.nombre-marca {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.lema {
+  font-size: 0.8rem;
+}
+
+/* navegacion con flexbox */
+
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px 20px;
+
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: inline-block;
+  padding: 8px 0;
+  color: #123047;
+  font-weight: bold;
+  border-bottom: 2px solid transparent;
+}
+
+.menu a:hover {
+  color: #0759b5;
+  border-bottom-color: #0759b5;
+  text-decoration: none;
+}
+
+/* botones */
+
+.boton {
+  display: inline-block;
+  padding: 11px 20px;
+  border: none;
+  border-radius: 8px;
+
+  background-color: #0759b5;
+  color: #ffffff;
+
+  font-family: inherit;
+  font-size: 0.95rem;
+  font-weight: bold;
+  text-align: center;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.3s ease,
+    transform 0.3s ease;
+}
+
+.boton:hover {
+  background-color: #063c79;
+  color: #ffffff;
+  text-decoration: none;
+  transform: translateY(-3px);
+}
+
+.boton-claro {
+  background-color: #ffffff;
+  color: #0759b5;
+}
+
+.boton-claro:hover {
+  background-color: #dceeff;
+  color: #062c45;
+}
+
+/* precentacion de contacto */
+.banner-contacto {
+  position: relative;
+  padding: 70px 0;
+  min-height: 280px;
+  display: flex;
+  align-items: center;
+  background: url('img3/pexels-jaison-jacob-samuel-317255142-31714222.jpg') center/cover no-repeat;
+  color: #ffffff;
+  text-align: center;
+}
+
+.banner-contacto::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(6, 44, 69, 0.9), rgba(6, 44, 69, 0.4));
+}
+
+.banner-contacto .contenedor {
+  position: relative;
+  z-index: 1;
+}
+
+.subtitulo-contacto {
+  font-size: 0.8rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: #bdeaff;
+}
+
+.banner-contacto h1 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+}
+
+.banner-contacto p:last-child {
+  margin-bottom: 0;
+}
+
+/* distribucion principal con grid */
+
+.distribucion-contacto {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: start;
+  gap: 30px;
+
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+/* formulario */
+
+.panel-formulario {
+  min-width: 0;
+  padding: 25px;
+  background-color: #ffffff;
+  border: 1px solid #dce7f0;
+  border-radius: 12px;
+}
+
+.panel-formulario form {
+  margin-top: 25px;
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 22px;
+}
+
+.campo label {
+  font-weight: bold;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  width: 100%;
+  min-width: 0;
+  padding: 13px;
+
+  border: 1px solid #9aafc0;
+  border-radius: 6px;
+
+  background-color: #ffffff;
+  color: #123047;
+
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  outline: 2px solid #0759b5;
+  outline-offset: 2px;
+}
+
+.campo textarea {
+  resize: vertical;
+  min-height: 150px;
+}
+
+/* informacion lateral */
+
+.informacion-contacto {
+  min-width: 0;
+  padding: 28px;
+  background-color: #eaf5ff;
+  border-radius: 12px;
+}
+
+.informacion-contacto h2 {
+  font-size: 1.5rem;
+}
+
+.dato-contacto {
+  margin-top: 25px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #cbddea;
+}
+
+.dato-contacto h3 {
+  margin-bottom: 10px;
+  color: #0759b5;
+}
+
+.dato-contacto p {
+  margin-bottom: 5px;
+}
+
+.lista-consultas {
+  margin: 0;
+  padding-left: 20px;
+}
+
+.lista-consultas li {
+  margin-bottom: 8px;
+}
+
+/* invitación a explorar destinos */
+
+.invitacion {
+  margin-top: 25px;
+  padding: 25px;
+  border-radius: 10px;
+
+  background-color: #062c45;
+  color: #ffffff;
+  text-align: center;
+}
+
+.avion {
+  display: inline-block;
+  margin-bottom: 12px;
+  font-size: 2.5rem;
+  color: #6cd3ff;
+}
+
+/* pie de página con flexbox */
+
+.pie {
+  padding-top: 35px;
+  background-color: #062c45;
+  color: #ffffff;
+}
+
+.contenido-pie {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.pie a {
+  color: #ffffff;
+}
+
+.pie a:hover {
+  color: #6cd3ff;
+}
+
+.pie h3 {
+  margin-bottom: 12px;
+}
+
+.pie p {
+  margin-bottom: 8px;
+}
+
+.enlaces-pie {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.enlaces-pie li {
+  margin-bottom: 6px;
+}
+
+.derechos {
+  padding: 18px 0;
+  border-top: 1px solid #426075;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.derechos p {
+  margin: 0;
+}
+
+/* tableta: desde 768px */
+
+@media (min-width: 768px) {
+  .distribucion-contacto {
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .panel-formulario {
+    padding: 35px;
+  }
+
+  .banner-contacto h1 {
+    font-size: 2.8rem;
+  }
+
+  .contenido-pie {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+/* escritorio: desde 1100px */
+
+@media (min-width: 1100px) {
+  .barra {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

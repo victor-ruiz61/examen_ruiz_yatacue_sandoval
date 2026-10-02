@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>DEV | Inicio</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- header -->
+  <header class="encabezado">
+    <div class="contenedor barra">
+
+      <a href="index.html" class="marca">
+        <img src="img/LOGO.jpg" alt="Logo de DEV" class="logo">
+
+        <span class="texto-marca">
+          <span class="nombre-marca">✈ DEV</span>
+          <span class="lema">Tu próximo destino te espera</span>
+        </span>
+      </a>
+
+      <!-- navegación flex -->
+      <nav aria-label="Navegación principal">
+        <ul class="menu">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="index.html#destinos">Destinos</a></li>
+          <li><a href="index.html#paquetes">Paquetes</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="contacto.html" class="boton">
+        Reserva ahora
+      </a>
+
+    </div>
+  </header>
+
+  <main>
+
+    <!-- portada -->
+    <section class="portada">
+      <div class="contenedor">
+
+        <p class="subtitulo-portada">
+          EXPLORA · DESCUBRE · VIVE EXPERIENCIAS
+        </p>
+
+        <h1>
+          El mundo te espera<br>
+          <span>¡Haz tu viaje realidad!</span>
+        </h1>
+
+        <p class="descripcion-portada">
+          En DEV te ayudamos a encontrar los mejores destinos,
+          paquetes y experiencias para que vivas el viaje de tus sueños y te atrevas a conocer el mundo entero
+        </p>
+
+        <a href="#destinos" class="boton">
+          Explorar destinos
+        </a>
+
+      </div>
+    </section>
+
+    <!-- principal y aside -->
+    <div class="contenedor distribucion">
+
+      <div class="contenido">
+        <section id="destinos">
+
+          <h2>Destinos populares</h2>
+
+          <p class="texto-secundario">
+            Lugares increíbles que no puedes dejar de conocer.
+          </p>
+
+          <!-- imagenes con tarjetas -->
+          <div class="galeria">
+
+            <article class="tarjeta">
+              <img
+                src="img/san-andres.jpg"
+                alt="Playa y mar de San Andrés">
+
+              <div class="contenido-tarjeta">
+                <h3>San Andrés</h3>
+                <p class="ubicacion">Colombia</p>
+                <p>Disfruta del mar en estas hermosas playas</p>
+                <p class="precio">Desde $1.700.000 COP</p>
+
+                <a href="contacto.html" class="boton">
+                  Consultar
+                </a>
+              </div>
+            </article>
+
+            <article class="tarjeta">
+              <img
+                src="img/medellin.jpg"
+                alt="Vista de la ciudad de Medellín">
+
+              <div class="contenido-tarjeta">
+                <h3>Medellín</h3>
+                <p class="ubicacion">Colombia</p>
+                <p>Descubre su cultura y sus paisajes</p>
+                <p class="precio">Desde $1.000.000 COP</p>
+
+                <a href="contacto.html" class="boton">
+                  Consultar
+                </a>
+              </div>
+            </article>
+
+            <article class="tarjeta">
+              <img
+                src="img/cartagena.jpg"
+                alt="Paisaje turístico de Cartagena">
+
+              <div class="contenido-tarjeta">
+                <h3>Cartagena</h3>
+                <p class="ubicacion">Colombia</p>
+                <p>Historia, playas y encanto caribeño todo lo que deseas en un solo sitio</p>
+                <p class="precio">Desde $1.600.000 COP</p>
+
+                <a href="contacto.html" class="boton">
+                  Consultar
+                </a>
+              </div>
+            </article>
+
+            <article class="tarjeta">
+              <img
+                src="img/machu-picchu.jpg"
+                alt="Montañas y construcciones de Machu Picchu">
+
+              <div class="contenido-tarjeta">
+                <h3>Machu Picchu</h3>
+                <p class="ubicacion">Perú</p>
+                <p>Vive una aventura entre montañas</p>
+                <p class="precio">Desde $2.500.000 COP</p>
+
+                <a href="contacto.html" class="boton">
+                  Consultar
+                </a>
+              </div>
+            </article>
+
+            <article class="tarjeta">
+              <img
+                src="img/eje-cafetero.jpg"
+                alt="Paisaje verde del Eje Cafetero">
+
+              <div class="contenido-tarjeta">
+                <h3>Eje Cafetero</h3>
+                <p class="ubicacion">Colombia</p>
+                <p>Conecta con la naturaleza y el café</p>
+                <p class="precio">Desde $700.000 COP</p>
+
+                <a href="contacto.html" class="boton">
+                  Consultar
+                </a>
+              </div>
+            </article>
+
+            <article class="tarjeta">
+              <img
+                src="img/santa-marta.jpg"
+                alt="Playa de Santa Marta">
+
+              <div class="contenido-tarjeta">
+                <h3>Santa Marta</h3>
+                <p class="ubicacion">Colombia</p>
+                <p>Encuentra playas y paisajes únicos</p>
+                <p class="precio">Desde $900.000 COP</p>
+
+                <a href="contacto.html" class="boton">
+                  Consultar
+                </a>
+              </div>
+            </article>
+
+          </div>
+
+        </section>
+
+        <!-- servicios -->
+        <section class="servicios">
+
+          <h2>Nuestros servicios</h2>
+
+          <p class="texto-secundario">
+            Todo lo que necesitas para un viaje perfecto.
+          </p>
+
+          <div class="lista-servicios">
+
+            <article>
+              <span class="icono" aria-hidden="true">✈</span>
+              <h3>Vuelos</h3>
+              <p>Encuentra una ruta para tu próxima aventura o escapada</p>
+            </article>
+
+            <article>
+              <span class="icono" aria-hidden="true">⌂</span>
+              <h3>Hoteles</h3>
+              <p>Comodidad y descanso durante tu viaje.</p>
+            </article>
+
+            <article>
+              <span class="icono" aria-hidden="true">☀</span>
+              <h3>Tours y excursiones</h3>
+              <p>Experiencias para descubrir cada destino.</p>
+            </article>
+
+          </div>
+
+        </section>
+
+        <!-- video de youtube -->
+        <section class="seccion-video">
+
+          <h2>Descubre Colombia</h2>
+
+          <p>
+            Inspírate con sus paisajes y empieza a imaginar
+            tu próximo viaje.
+          </p>
+
+          <a
+            href="https://www.youtube.com/watch?v=mn64ZdDpC6k"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="boton">
+            Antojate de viajar a Colombia, pais lleno de gente linda
+          </a>
+
+        </section>
+
+      </div>
+
+      <!-- aside -->
+      <aside class="ofertas">
+
+        <h2>Ofertas especiales</h2>
+
+        <p>Encuentra inspiración para tu próxima aventura.</p>
+
+        <article class="oferta">
+          <h3>Escapada cafetera</h3>
+          <p>Naturaleza, café y cultura.</p>
+          <p class="precio">Desde $700.000 COP</p>
+
+          <a href="contacto.html">
+            Consultar oferta →
+          </a>
+        </article>
+
+        <article class="oferta">
+          <h3>Aventura en el Caribe</h3>
+          <p>Sol, playa y momentos para descansar.</p>
+          <p class="precio">Desde $900.000 COP</p>
+
+          <a href="contacto.html">
+            Consultar oferta →
+          </a>
+        </article>
+
+        <section id="paquetes" class="paquete">
+          <h3>Paquetes para tu viaje</h3>
+          <p>Vuelos + hotel + tours</p>
+          <p>Todo al alcance de tu mano</p>
+
+          <a href="contacto.html" class="boton boton-claro">
+            Solicitar información
+          </a>
+        </section>
+
+      </aside>
+
+    </div>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="pie">
+
+    <div class="contenedor contenido-pie">
+
+      <div>
+        <a href="index.html" class="marca">
+          <img src="img/LOGO.jpg" alt="Logo de DEV" class="logo">
+
+          <span class="texto-marca">
+            <span class="nombre-marca">✈ DEV</span>
+            <span class="lema">Viaja con nosotros</span>
+          </span>
+        </a>
+      </div>
+
+      <div>
+        <h3>Enlaces rápidos</h3>
+
+        <ul class="enlaces-pie">
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="nosotros.html">Nosotros</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+          <li><a href="https://www.facebook.com/share/1Fowe1iLKM/?mibextid=wwXIfr">Facebook</a></li>
+          <li><a href="https://www.instagram.com/manuellruiizz?stkn=MWJpc2s5MXZlb3hudw%3D%3D&utm_source=qr">Instagram</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3>Visítanos</h3>
+        <p>Popayán, Cauca · Colombia</p>
+        <p>Lunes a viernes: 8:00 a. m. a 5:00 p. m.</p>
+
+        <a href="contacto.html">
+          Planea tu viaje con nosotros
+        </a>
+      </div>
+
+    </div>
+
+    <div class="contenedor derechos">
+      <p>© 2026 DEV · Agencia de viajes </p>
+    </div>
+
+  </footer>
+
+</body>
+</html>
